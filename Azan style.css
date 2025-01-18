@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-nazim-ahmet-altuntop-999867949-29098409.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    align-items: center;
+    color: white;
+    background-color: rgb(3, 31, 58);
+    box-shadow: rgb(3,31,58);
+
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 12px;
+}
+.navbar ul li a:hover {
+    Background: black;
+    Border radius: 5px;
+}
+
+nav .logo{
+    font-size: 1.5rem;
+}
+
+nav .logo span{
+    color: rgb(7,113,219);
+
+}
+
+nav .links{
+    display: flex;
+}
+
+nav .links  a{
+    
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .links .link a::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom:-4px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(7,113,219);
+    transition: 0.3s linear;
+}
+
+nav .links .link a:hover::before,
+nav .links .link a:hover{
+    width: 100%;
+    color: rgb(7,113,219);
+}
+
+nav .buttons {
+    width: 250px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav .buttons .btn{
+    margin: 0 5px;
+    width: 50%;
+    height: 5vh;
+
+}
+
+nav .buttons button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(7,113,219);
+    transition: 0.2 linear;
+}
+
+.buttons  button:hover{
+    color: rgb(7,113,219);
+    border: 3px solid rgb(7,113,219);
+    background-color: white;
+    box-shadow:  0 0 10px 4px rgb(7,113,219);
+
+
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.content{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 40%;
+    color: white;
+}
+
+.content h1{
+    font-size: 4rem;
+    text-shadow: 0 0 7px white;
+
+
+}
+
+.content h2{
+    font-size: 4rem;
+    text-shadow: 0 0 7px white;
+
+}
+
+.content h2 span{
+    color: rgb(7,113,219);
+    text-shadow: 3px 2px 3px rgb(7,113,219);
+}
+
+.content p{
+    width: 60%;
+    margin: 10px;
+}
+
+.content button{
+    width:40%;
+    height:7vh;
+    border-radius: 10px;
+    background-color:rgb(7,113,219);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin: 20px;
+    transition: 0.2s linear;
+}
+
+.content button:hover{
+    font-size: 1.3ram;
+    background-color: transparent;
+    color: rgb(7, 117, 252);
+    border: 1px solid rgb(7,113,219);
+}
